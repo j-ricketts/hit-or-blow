@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/bamboo-wood-semigloss-normal.png-abb247245a3a3a24c9dac6efb3d7a7d3.s3tc.stex"
-path.etc2="res://.import/bamboo-wood-semigloss-normal.png-abb247245a3a3a24c9dac6efb3d7a7d3.etc2.stex"
+path.s3tc="res://.import/bamboo-wood-semigloss-normal.png-3bd5c61cc0f669dafa6b03ace1731b32.s3tc.stex"
+path.etc2="res://.import/bamboo-wood-semigloss-normal.png-3bd5c61cc0f669dafa6b03ace1731b32.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Wood/bamboo-wood-semigloss-normal.png"
-dest_files=[ "res://.import/bamboo-wood-semigloss-normal.png-abb247245a3a3a24c9dac6efb3d7a7d3.s3tc.stex", "res://.import/bamboo-wood-semigloss-normal.png-abb247245a3a3a24c9dac6efb3d7a7d3.etc2.stex" ]
+source_file="res://Textures/Wood/bamboo-wood-semigloss-normal.png"
+dest_files=[ "res://.import/bamboo-wood-semigloss-normal.png-3bd5c61cc0f669dafa6b03ace1731b32.s3tc.stex", "res://.import/bamboo-wood-semigloss-normal.png-3bd5c61cc0f669dafa6b03ace1731b32.etc2.stex" ]
 
 [params]
 

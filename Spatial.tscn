@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://textures/grass/Stylized_Grass_003_ambientOcclusion.jpg" type="Texture" id=1]
-[ext_resource path="res://textures/grass/Stylized_Grass_003_normal.jpg" type="Texture" id=2]
-[ext_resource path="res://textures/grass/Stylized_Grass_003_height.png" type="Texture" id=3]
-[ext_resource path="res://textures/grass/Stylized_Grass_003_basecolor.jpg" type="Texture" id=4]
-[ext_resource path="res://objFiles/Pin/Pin.tscn" type="PackedScene" id=5]
-[ext_resource path="res://objFiles/Board/hitblow_board11.glb" type="PackedScene" id=6]
+[ext_resource path="res://Textures/grass/Stylized_Grass_003_ambientOcclusion.jpg" type="Texture" id=1]
+[ext_resource path="res://Textures/grass/Stylized_Grass_003_normal.jpg" type="Texture" id=2]
+[ext_resource path="res://Textures/grass/Stylized_Grass_003_height.png" type="Texture" id=3]
+[ext_resource path="res://Textures/grass/Stylized_Grass_003_basecolor.jpg" type="Texture" id=4]
+[ext_resource path="res://Objects/Board/hitblow_board11.glb" type="PackedScene" id=5]
+[ext_resource path="res://Main.gd" type="Script" id=7]
 
 [sub_resource type="CubeMesh" id=7]
 
@@ -45,6 +45,7 @@ tonemap_exposure = 1.91
 tonemap_white = 4.17
 
 [node name="Spatial" type="Spatial"]
+script = ExtResource( 7 )
 
 [node name="CSGMesh6" type="CSGMesh" parent="."]
 transform = Transform( 13.1262, 0, 0, 0, 1.00225, 0, 0, 0, 12.1657, 0, -1.15373, 0 )
@@ -67,20 +68,5 @@ transform = Transform( 0.999479, 0.0305787, -0.0103274, 0.0210101, -0.373519, 0.
 shadow_enabled = true
 shadow_bias = 0.65
 
-[node name="Pin" parent="." instance=ExtResource( 5 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -1.40283, 0.325684, 1.90876 )
-
-[node name="Cylinder002" parent="Pin" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0030719, 0, 0 )
-
-[node name="Pin2" parent="." instance=ExtResource( 5 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.736212, 0.325684, 1.90876 )
-
-[node name="Cylinder002" parent="Pin2" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0030719, 0, 0 )
-
-[node name="hitblow_board11" parent="." instance=ExtResource( 6 )]
+[node name="hitblow_board11" parent="." instance=ExtResource( 5 )]
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
-
-[editable path="Pin"]
-[editable path="Pin2"]

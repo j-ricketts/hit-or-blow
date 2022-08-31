@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Stylized_Grass_003_roughness.jpg-bbaac9903b13192eb41f1541b2c2b2e7.s3tc.stex"
-path.etc2="res://.import/Stylized_Grass_003_roughness.jpg-bbaac9903b13192eb41f1541b2c2b2e7.etc2.stex"
+path.s3tc="res://.import/Stylized_Grass_003_roughness.jpg-9b2dfbdef1e3257d494a5a5b1450b0cc.s3tc.stex"
+path.etc2="res://.import/Stylized_Grass_003_roughness.jpg-9b2dfbdef1e3257d494a5a5b1450b0cc.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/grass/Stylized_Grass_003_roughness.jpg"
-dest_files=[ "res://.import/Stylized_Grass_003_roughness.jpg-bbaac9903b13192eb41f1541b2c2b2e7.s3tc.stex", "res://.import/Stylized_Grass_003_roughness.jpg-bbaac9903b13192eb41f1541b2c2b2e7.etc2.stex" ]
+source_file="res://Textures/grass/Stylized_Grass_003_roughness.jpg"
+dest_files=[ "res://.import/Stylized_Grass_003_roughness.jpg-9b2dfbdef1e3257d494a5a5b1450b0cc.s3tc.stex", "res://.import/Stylized_Grass_003_roughness.jpg-9b2dfbdef1e3257d494a5a5b1450b0cc.etc2.stex" ]
 
 [params]
 

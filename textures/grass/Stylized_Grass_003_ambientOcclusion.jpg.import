@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Stylized_Grass_003_ambientOcclusion.jpg-744d5f2ae6daa4e642bcfa55174730d8.s3tc.stex"
-path.etc2="res://.import/Stylized_Grass_003_ambientOcclusion.jpg-744d5f2ae6daa4e642bcfa55174730d8.etc2.stex"
+path.s3tc="res://.import/Stylized_Grass_003_ambientOcclusion.jpg-6b0bd6ea7336c2a7b20871acdb8c7086.s3tc.stex"
+path.etc2="res://.import/Stylized_Grass_003_ambientOcclusion.jpg-6b0bd6ea7336c2a7b20871acdb8c7086.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/grass/Stylized_Grass_003_ambientOcclusion.jpg"
-dest_files=[ "res://.import/Stylized_Grass_003_ambientOcclusion.jpg-744d5f2ae6daa4e642bcfa55174730d8.s3tc.stex", "res://.import/Stylized_Grass_003_ambientOcclusion.jpg-744d5f2ae6daa4e642bcfa55174730d8.etc2.stex" ]
+source_file="res://Textures/grass/Stylized_Grass_003_ambientOcclusion.jpg"
+dest_files=[ "res://.import/Stylized_Grass_003_ambientOcclusion.jpg-6b0bd6ea7336c2a7b20871acdb8c7086.s3tc.stex", "res://.import/Stylized_Grass_003_ambientOcclusion.jpg-6b0bd6ea7336c2a7b20871acdb8c7086.etc2.stex" ]
 
 [params]
 

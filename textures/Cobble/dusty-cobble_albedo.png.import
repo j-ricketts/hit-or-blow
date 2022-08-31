@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/dusty-cobble_albedo.png-fcc796995c69490f1d810916efa64cc6.s3tc.stex"
-path.etc2="res://.import/dusty-cobble_albedo.png-fcc796995c69490f1d810916efa64cc6.etc2.stex"
+path.s3tc="res://.import/dusty-cobble_albedo.png-9b045da8221c8d337b7ea2cef1f4a918.s3tc.stex"
+path.etc2="res://.import/dusty-cobble_albedo.png-9b045da8221c8d337b7ea2cef1f4a918.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/Cobble/dusty-cobble_albedo.png"
-dest_files=[ "res://.import/dusty-cobble_albedo.png-fcc796995c69490f1d810916efa64cc6.s3tc.stex", "res://.import/dusty-cobble_albedo.png-fcc796995c69490f1d810916efa64cc6.etc2.stex" ]
+source_file="res://Textures/Cobble/dusty-cobble_albedo.png"
+dest_files=[ "res://.import/dusty-cobble_albedo.png-9b045da8221c8d337b7ea2cef1f4a918.s3tc.stex", "res://.import/dusty-cobble_albedo.png-9b045da8221c8d337b7ea2cef1f4a918.etc2.stex" ]
 
 [params]
 
