@@ -8,6 +8,40 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "Board",
+"language": "GDScript",
+"path": "res://Main.gd"
+}, {
+"base": "Node",
+"class": "GameVars",
+"language": "GDScript",
+"path": "res://GameVars.gd"
+}, {
+"base": "Spatial",
+"class": "LogicHole",
+"language": "GDScript",
+"path": "res://Objects/LogicHole/LogicHole.gd"
+}, {
+"base": "Spatial",
+"class": "LogicSelect",
+"language": "GDScript",
+"path": "res://Objects/LogicSelect/LogicSelect.gd"
+}, {
+"base": "Spatial",
+"class": "Pin",
+"language": "GDScript",
+"path": "res://Objects/Pin/Pin.gd"
+} ]
+_global_script_class_icons={
+"Board": "",
+"GameVars": "",
+"LogicHole": "",
+"LogicSelect": "",
+"Pin": ""
+}
+
 [application]
 
 config/name="Mastermind"
@@ -20,6 +54,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-quality/filters/msaa=3
+quality/filters/use_nearest_mipmap_filter=true
+quality/filters/msaa=4
 quality/filters/use_fxaa=true
 environment/default_environment="res://default_env.tres"
