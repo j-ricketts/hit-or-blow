@@ -4,6 +4,8 @@ class_name Pin
 
 export (int) var pin_number setget set_pin_num, get_pin_num
 
+
+
 var pin_colours : Array = [Color.chartreuse,
 							Color.brown,
 							Color.coral,
@@ -27,4 +29,4 @@ func get_pin_num():
 
 func initialise(pin_number):
 	set_pin_num(pin_number)
-	
+

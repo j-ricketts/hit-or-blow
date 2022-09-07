@@ -152,7 +152,6 @@ func advance_level():
 		logic_hole.hole_active = true
 
 func _on_pin_set(is_set):
-	
 	var all_set = true
 	for logic_hole in holes[game_vars.curr_level]:
 		all_set = all_set and logic_hole.pin_set

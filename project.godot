@@ -15,6 +15,16 @@ _global_script_classes=[ {
 "path": "res://Main.gd"
 }, {
 "base": "Node",
+"class": "CurveNode",
+"language": "GDScript",
+"path": "res://CurveNode.gd"
+}, {
+"base": "Tween",
+"class": "CurveTween",
+"language": "GDScript",
+"path": "res://CurveTween/CurveTween.gd"
+}, {
+"base": "Node",
 "class": "GameVars",
 "language": "GDScript",
 "path": "res://GameVars.gd"
@@ -33,13 +43,27 @@ _global_script_classes=[ {
 "class": "Pin",
 "language": "GDScript",
 "path": "res://Objects/Pin/Pin.gd"
+}, {
+"base": "Node",
+"class": "PinAnimator",
+"language": "GDScript",
+"path": "res://PinAnimator.gd"
+}, {
+"base": "Object",
+"class": "TweenManager",
+"language": "GDScript",
+"path": "res://TweenManager.gd"
 } ]
 _global_script_class_icons={
 "Board": "",
+"CurveNode": "",
+"CurveTween": "",
 "GameVars": "",
 "LogicHole": "",
 "LogicSelect": "",
-"Pin": ""
+"Pin": "",
+"PinAnimator": "",
+"TweenManager": ""
 }
 
 [application]
