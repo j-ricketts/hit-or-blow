@@ -4,14 +4,16 @@ class_name TweenManager
 var loaded_tweens = {}
 var _playing_tweens : Dictionary = {}
 
-signal tween_completed
+signal tween_completed(object_name)
+signal update(val, property)
 
 func tween_update(val, obj, property):
 	#print(obj.name)
-	obj.set(property, val)
+	#obj.set(property, val)
+	emit_signal("update", val, property)
 
 
-func _on_tween_completed(object, key):
+func _on_tween_completed(object, _key):
 	emit_signal("tween_completed", object.name)
 
 func load_tween(tween_ref : CurveTween, obj, property, storage_loc):

@@ -4,11 +4,11 @@
 [ext_resource path="res://Textures/grass/Stylized_Grass_003_normal.jpg" type="Texture" id=2]
 [ext_resource path="res://Textures/grass/Stylized_Grass_003_height.png" type="Texture" id=3]
 [ext_resource path="res://Textures/grass/Stylized_Grass_003_basecolor.jpg" type="Texture" id=4]
-[ext_resource path="res://Objects/Board/hitblow_board11.glb" type="PackedScene" id=5]
+[ext_resource path="res://Objects/Board/hitblow_board14.glb" type="PackedScene" id=5]
 [ext_resource path="res://camera.gd" type="Script" id=6]
-[ext_resource path="res://Main.gd" type="Script" id=7]
+[ext_resource path="res://Board.gd" type="Script" id=7]
 [ext_resource path="res://CurveTween/CurveTween.gd" type="Script" id=8]
-[ext_resource path="res://CurveNode.gd" type="Script" id=9]
+[ext_resource path="res://Cover.gd" type="Script" id=9]
 
 [sub_resource type="CubeMesh" id=7]
 
@@ -41,8 +41,10 @@ sun_latitude = 33.16
 background_mode = 2
 background_sky = SubResource( 12 )
 background_sky_custom_fov = 34.5
-ambient_light_energy = 0.0
-ambient_light_sky_contribution = 0.0
+background_energy = 0.4
+ambient_light_color = Color( 0.172549, 0.188235, 0.196078, 1 )
+ambient_light_energy = 0.4
+ambient_light_sky_contribution = 0.1
 tonemap_mode = 2
 tonemap_exposure = 1.91
 tonemap_white = 4.17
@@ -63,7 +65,7 @@ _data = [ Vector2( 0, 0 ), 0.0, 1.52727, 0, 0, Vector2( 0.346491, 0.754545 ), 0.
 [node name="Spatial" type="Spatial"]
 
 [node name="CSGMesh6" type="CSGMesh" parent="."]
-transform = Transform( 13.1262, 0, 0, 0, 1.00225, 0, 0, 0, 12.1657, 0, -1.15373, 0 )
+transform = Transform( 13.1262, 0, 0, 0, 1.00225, 0, 0, 0, 12.1657, 0, -1.40433, 0 )
 mesh = SubResource( 7 )
 material = SubResource( 8 )
 
@@ -81,14 +83,10 @@ sensitivity = 1.0
 environment = SubResource( 13 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="WorldEnvironment"]
-transform = Transform( 0.999479, 0.0305787, -0.0103273, 0.0210101, -0.373519, 0.927385, 0.0245008, -0.927118, -0.373967, 7.50069, 3.23462, -6.87558 )
+transform = Transform( 0.808436, 0.56496, 0.165079, 0.0735786, -0.375274, 0.923989, 0.583967, -0.73484, -0.344954, 5.27819, 3.23462, -2.267 )
+light_energy = 1.2
 shadow_enabled = true
-shadow_bias = 0.65
-
-[node name="hitblow_board11" parent="." instance=ExtResource( 5 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0.00803137, 4.76837e-07, 0.00125098 )
-script = ExtResource( 7 )
-holes = [ [  ], [  ], [  ], [  ], [  ], [  ], [  ], [  ] ]
+shadow_color = Color( 0.270588, 0.270588, 0.270588, 1 )
 
 [node name="Storage" type="Node" parent="."]
 
@@ -116,5 +114,15 @@ curve = SubResource( 17 )
 script = ExtResource( 8 )
 curve = SubResource( 15 )
 
-[node name="HoldCurve" type="Node" parent="Storage"]
+[node name="hitblow_board14" parent="." instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+script = ExtResource( 7 )
+
+[node name="Cover" parent="hitblow_board14" index="0"]
+transform = Transform( 3.00873, 0.00121095, 7.53456, 5.76038, 0.0331129, -3.93541, -0.00712377, 27.2862, 0.00444145, 0.656769, 0.0451717, -0.239742 )
 script = ExtResource( 9 )
+
+[node name="Board097" parent="hitblow_board14" index="171"]
+transform = Transform( 0.047448, 0, 0, 0, 0.047448, 0, 0, 0, 0.047448, 0.0517727, 0.0929567, -0.0479889 )
+
+[editable path="hitblow_board14"]

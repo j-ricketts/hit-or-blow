@@ -12,7 +12,12 @@ _global_script_classes=[ {
 "base": "Spatial",
 "class": "Board",
 "language": "GDScript",
-"path": "res://Main.gd"
+"path": "res://Board.gd"
+}, {
+"base": "Node",
+"class": "BoardLogic",
+"language": "GDScript",
+"path": "res://BoardLogic.gd"
 }, {
 "base": "Node",
 "class": "CurveNode",
@@ -29,25 +34,35 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://GameVars.gd"
 }, {
+"base": "Node",
+"class": "Level",
+"language": "GDScript",
+"path": "res://Level.gd"
+}, {
 "base": "Spatial",
 "class": "LogicHole",
 "language": "GDScript",
-"path": "res://Objects/LogicHole/LogicHole.gd"
+"path": "res://LogicHole.gd"
 }, {
 "base": "Spatial",
 "class": "LogicSelect",
 "language": "GDScript",
-"path": "res://Objects/LogicSelect/LogicSelect.gd"
+"path": "res://LogicSelect.gd"
 }, {
 "base": "Spatial",
 "class": "Pin",
 "language": "GDScript",
-"path": "res://Objects/Pin/Pin.gd"
+"path": "res://Pin.gd"
 }, {
 "base": "Node",
 "class": "PinAnimator",
 "language": "GDScript",
 "path": "res://PinAnimator.gd"
+}, {
+"base": "Pin",
+"class": "PlayPin",
+"language": "GDScript",
+"path": "res://PlayPin.gd"
 }, {
 "base": "Object",
 "class": "TweenManager",
@@ -56,13 +71,16 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Board": "",
+"BoardLogic": "",
 "CurveNode": "",
 "CurveTween": "",
 "GameVars": "",
+"Level": "",
 "LogicHole": "",
 "LogicSelect": "",
 "Pin": "",
 "PinAnimator": "",
+"PlayPin": "",
 "TweenManager": ""
 }
 
@@ -71,6 +89,13 @@ _global_script_class_icons={
 config/name="Mastermind"
 run/main_scene="res://Spatial.tscn"
 config/icon="res://icon.png"
+
+[debug]
+
+gdscript/warnings/unassigned_variable_op_assign=false
+gdscript/warnings/unused_variable=false
+gdscript/warnings/shadowed_variable=false
+gdscript/warnings/return_value_discarded=false
 
 [physics]
 
